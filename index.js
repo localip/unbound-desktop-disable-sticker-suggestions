@@ -15,11 +15,8 @@ const [
 
 export default class DisableStickerSuggestions extends Plugin {
    start() {
-      Patcher.after(Stickers, 'queryStickers', (_, args, res) => {
-         // Check if its the chatbox
-         if (args[2]) {
-            return { stickers: [] };
-         }
+      Patcher.after(Stickers, 'queryStickers', (_, [, , isChat], res) => {
+         if (isChat) return [];
       });
 
       Patcher.instead(Expressions, 'useStickerSuggestionResults', () => []);
