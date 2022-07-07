@@ -1,0 +1,13 @@
+{
+   "name": "Disable Sticker Suggestions",
+   "description": "Disables sticker suggestions while typing messages and emotes in chat.",
+   "version": "1.0.0",
+   "authors": [
+      {
+         "name": "eternal",
+         "id": "263689920210534400"
+      }
+   ],
+   "main": "dist",
+   "id": "eternal.disable-sticker-suggestions"
+}
