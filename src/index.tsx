@@ -6,8 +6,8 @@ const [
    Expressions,
    Stickers
 ] = findByProps(
-   'useStickerSuggestionResults',
-   'queryStickers',
+   ['useStickerSuggestionResults'],
+   ['queryStickers'],
    { bulk: true }
 );
 
