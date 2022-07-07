@@ -25,7 +25,6 @@ export default class extends Plugin {
    }
 
    stop() {
-      this.style.remove();
       this.patcher.unpatchAll();
    }
 }
